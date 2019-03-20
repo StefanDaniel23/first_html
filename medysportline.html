@@ -104,6 +104,34 @@ div.c {
   object-fit: cover;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: #87b9ec;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+  color: green;
+}
+li a:active {
+background-color: inherit;
+color: #87b9ec;
+}
+
+.dreaptaterapy {
+  padding-left: 48px;
+  float:right;
+  width: 200px;
+  height: 430px;
+  background-color: whitesmoke;
+}
+
 </style>
   </head>
   <body class="background">
@@ -111,10 +139,9 @@ div.c {
   <table>
     <tr>
       <td rowspan="2">
-  <button style="border: 0; margin: 1px; padding: 0px; cursor: pointer;"
-  href="medysportline.html">
+    <a href="">
   <img src="imagini/MedyLogo.jpg" width="300px" height="90px">
-</button>
+</a>
 </td>
 <td width="80px"></td>
     <th><a class="tipbuton" href="medysportline.html">HOME</a></th>
@@ -135,9 +162,9 @@ div.c {
           <a href="">SERVICII</a>
           </li>
           <ul>
-            <li>SERVICII MEDICALE</li>
-            <li>CONTROL</li>
-            <li>FIZIOTERAPIE</li>
+            <li><a href="">SERVICII MEDICALE</a></li>
+            <li><a href="">CONTROL</a></li>
+            <li><a href="">FIZIOTERAPIE</a></li>
           </ul>
       <!--  <li>SERVICII</li>
         <li>SERVICII</li>
@@ -172,12 +199,12 @@ div.c {
 <!-- sfarsit sectiune buton programare + poza -->
 
   <div class="center1" style="font-family: inherit">
-        <p>TERAPIA BOWEN</p>
+        <p style="padding-left: 24px;">TERAPIA BOWEN</p>
   </div>
 
 <!--section terapy -->
 <div class="center clearfix">
-    <div style="float:left; width: 75%; background-color: white;">
+    <div style="float:left; width: 818px; height: 430px; background-color: white;">
         <img src="imagini/firstpage.jpg"
         style="float:left; width:25%;height:25%; padding:24px;">
         <p style="padding:24px;">
@@ -198,9 +225,9 @@ div.c {
 
         <div style="background-color: white; padding:0px; margin: -15px;"></div>
 
-        <div>
+        <div style="padding-left: 48px;">
             <h3>ALTE MATERIALE DESPRE TERAPIA BOWEN</h3>
-            <ul>
+            <ul style="list-style-type: circle;">
             <li>Despre Terapie</li>
             <li>Tratare prin Bowtech</li>
             <li>Fertilitate</li>
@@ -211,18 +238,17 @@ div.c {
         </div>
       </div>
 <!-- Sectia ALTE SERVICII -->
-      <div style="float:right; width: 266px;
-      height: 430px; background-color: whitesmoke;">
+      <div class="dreaptaterapy">
         <h3>ALTE SERVICII</h3>
         <hr/>
-        <ul>
-        <li><a href="imagini/incalzire.jpg">Metoda neconventionala</a></li>
-        <li>Regenerare</li>
-        <li>Vindecare rapida</li>
+        <ul style="list-style-type: circle;">
+        <li><a href="http://www.medysportline.ro/recovery-boots">Metoda neconventionala</a></li>
+        <li><a href="">Regenerare</a></li>
+        <li><a href="">Vindecare rapida</a></li>
         </ul>
         <h3>NOUTATI</h3>
         <hr/>
-        <ul>
+        <ul style="list-style-type: circle;">
         <li><a href="imagini/incalzire.jpg">Masaj terapeutic</a></li>
         <li>Masaj sportiv</li>
         <li>Masaj anticelulitic</li>
@@ -310,13 +336,13 @@ div.c {
       </div>
 
 <div>
-<form style="width: 100%;">
-  <input type="email" name="emailaddress" value="E-mail">
+<form>
+  <input type="email" name="emailaddress" placeholder="E-mail" size="30">
 </form>
 </div>
 
 <div>
-  <form style="width: 100%;">
+  <form>
     <input type="checkbox" name="acord conditii" style="float:left;">
     <p style="font-size: 11px;">
       Sunt de acord cu termenii si conditiile serviciilor.
@@ -325,7 +351,7 @@ div.c {
 </div>
 
 <div>
-  <form style="width: 100%;">
+  <form>
     <input type="submit" name="submit" value="Inscrie-te">
       </form>
 </div>
