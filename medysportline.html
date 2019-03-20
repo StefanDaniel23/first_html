@@ -7,7 +7,8 @@
 
 .center {
   margin: auto;
-  width: 74.1%;
+  width: 80%;
+  height: 100%;
   border: 3px solid #73AD21;
   padding: 0px;
 }
@@ -16,6 +17,14 @@
   content: "";
   clear: both;
   display: table;
+}
+
+.block {
+  /*height: fit-content;*/
+margin-left: 4px;
+display: inline-block;
+width: 23%;
+background-color: white;
 }
 
   #div1 {
@@ -36,7 +45,7 @@
       background-color: #3A8EBA;
       color: white;
       margin: auto;
-      width: 74.1%;
+      width: 80%;
       border: 3px solid #73AD21;
       padding: 0px;
       font-family: cursive;
@@ -57,21 +66,44 @@ div.c {
   width: 74%;
   border: 1px solid black;
 }
-  .button {
+  .tipbuton {
     background-color: inherit;
     border: none;
-    color: blue;
+    color: #87b9ec;
     padding: 10px 5px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
-  }
-  button:hover {
+    text-decoration: none;
+    }
+  .tipbuton:hover {
     color: green;
   }
 .background {
-background-image: url("imagini/background.jpg");
+    background-image: url("imagini/background.jpg");
 }
+
+.prog {
+          position: relative;
+          top: -88px;
+          background-color: green;
+          height: 50px;
+          margin-left: -12px;
+          border-radius: 11px;
+          width: 150px;
+          }
+
+.echipa {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.echipa1 {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
 </style>
   </head>
   <body class="background">
@@ -85,23 +117,37 @@ background-image: url("imagini/background.jpg");
 </button>
 </td>
 <td width="80px"></td>
-    <th><button class="button" href="medysportline.html">HOME</button></th>
-    <th>
-      <form>
-    <input type="button" class="button" value="SERVICII">
-        <!--<select class="button">
+    <th><a class="tipbuton" href="medysportline.html">HOME</a></th>
+  <!--<th>
+   <form>
+    <input type="button" class="tipbuton" value="SERVICII">
+        <select class="button">
           <option value="servicii">SERVICII</option>
           <option value="serviciimedicale">SERVICII MEDICALE</option>
           <option value="control">CONTROL</option>
           <option value="fizioterapie">FIZIO TERAPIE</option>
-        </select>-->
+        </select>
       </form>
-    </th>
-
-    <th><button class="button">TESTIMONIALE</button></th>
-    <th><button class="button">NOUTATI</button></th>
-    <th><button class="button">PATOLOGII</button></th>
-    <th><button class="button">PARTENERI</button></th>
+    </th> -->
+    <th>
+      <ul>
+        <li>
+          <a href="">SERVICII</a>
+          </li>
+          <ul>
+            <li>SERVICII MEDICALE</li>
+            <li>CONTROL</li>
+            <li>FIZIOTERAPIE</li>
+          </ul>
+      <!--  <li>SERVICII</li>
+        <li>SERVICII</li>
+        <li>SERVICII</li> -->
+        </ul>
+      </th>
+    <th><a class="tipbuton" href="">TESTIMONIALE</a></th>
+    <th><a class="tipbuton" href="">NOUTATI</a></th>
+    <th><a class="tipbuton" href="">PATOLOGII</a></th>
+    <th><a class="tipbuton" href="">PARTENERI</a></th>
     <th><button class="button">DESPRE NOI</button></th>
     <tr align="right">
 <td colspan="9">
@@ -116,17 +162,22 @@ background-image: url("imagini/background.jpg");
 </table>
 </div>
 
-<div class="center">
+<!-- sectiune buton programare + poza -->
+<div class="center" style="height:302px;">
 <img src="imagini/testimoniale.jpg" style="width: 100%;">
-<button>Programare</button> //nu stiu cum sa pun butonu pe imagine
-</div>
 
-<div class="center1" style="font-family: inherit">
-<p>TERAPIA BOWEN</p>
+<button class="prog">Programare</button>
+
 </div>
+<!-- sfarsit sectiune buton programare + poza -->
+
+  <div class="center1" style="font-family: inherit">
+        <p>TERAPIA BOWEN</p>
+  </div>
+
 <!--section terapy -->
 <div class="center clearfix">
-    <div style="float:left; width: 70%">
+    <div style="float:left; width: 75%; background-color: white;">
         <img src="imagini/firstpage.jpg"
         style="float:left; width:25%;height:25%; padding:24px;">
         <p style="padding:24px;">
@@ -144,7 +195,8 @@ background-image: url("imagini/background.jpg");
         de ultimă generaţie în fizioterapie, kinetoterapie,
         masaj corporal şi terapii alternative.
         </p>
-        <br/><br/>
+
+        <div style="background-color: white; padding:0px; margin: -15px;"></div>
 
         <div>
             <h3>ALTE MATERIALE DESPRE TERAPIA BOWEN</h3>
@@ -158,7 +210,9 @@ background-image: url("imagini/background.jpg");
             </ul>
         </div>
       </div>
-      <div style="float:right; margin-right: 50px;">
+<!-- Sectia ALTE SERVICII -->
+      <div style="float:right; width: 266px;
+      height: 430px; background-color: whitesmoke;">
         <h3>ALTE SERVICII</h3>
         <hr/>
         <ul>
@@ -176,7 +230,7 @@ background-image: url("imagini/background.jpg");
         <li>drenaj limfatic</li>
         </ul>
       </div>
-
+<!-- SFARSIT sectie ALTE SERVICII -->
 </div>
 <!--end section terapy -->
 
@@ -191,17 +245,136 @@ background-image: url("imagini/background.jpg");
 </p>
 </div>
 
-<div class="center" style="float: right;">
-  <h3 style="text-decoration: underline; color: #3A8EBA">ECHIPA</h3>
+<!-- PARTEA DE JOS -->
+<div class="center clearfix">
+<!-- Bloc 1 -->
+  <div class="block">
+
+        <div style="text-align: center;">
+          <h3 style="text-decoration: underline; color: #3A8EBA">ECHIPA</h3>
+        </div>
+
+        <div class="echipa">
+          <a href="https://ro.wikipedia.org/wiki/Gheorghe_Hagi">
+            <img class="echipa1" src="imagini/Hagi.jpg" alt="Gheorghe Hagi">
+          </a>
+        </div>
+        <div class="echipa">
+          <a href="https://ro.wikipedia.org/wiki/Cristian_Chivu">
+            <img class="echipa1" src="imagini/Chivu.jpg" alt="Cristian Chivu">
+          </a>
+        </div>
+        <div class="echipa">
+          <a href="https://ro.wikipedia.org/wiki/Ilie_Balaci">
+            <img class="echipa1" src="imagini/Balaci.jpg" alt="Ilie Balaci">
+          </a>
+        </div>
+        <div class="echipa" style="display: inline;">
+          <a href="https://ro.wikipedia.org/wiki/Simona_Halep">
+            <img class="echipa1" src="imagini/Halep.jpg" alt="Simona Halep">
+          </a>
+        </div>
+        <div class="echipa" style="float:left;">
+          <a href="https://ro.wikipedia.org/wiki/Lionel_Messi">
+            <img class="echipa1" src="imagini/Messi.jpg" alt="Lionel Messi">
+          </a>
+        </div>
+        <div class="echipa">
+          <a href="https://ro.wikipedia.org/wiki/Cristina_Neagu">
+            <img class="echipa1" src="imagini/Neagu.jpg" alt="Cristina Neagu">
+          </a>
+        </div>
+        <div class="echipa">
+          <a href="https://ro.wikipedia.org/wiki/Cristiano_Ronaldo">
+            <img class="echipa1" src="imagini/CR.jpg" alt="Cristiano Ronaldo">
+          </a>
+        </div>
+        <div class="echipa">
+          <a href="https://ro.wikipedia.org/wiki/Andrea_Pirlo">
+            <img class="echipa1" src="imagini/Pirlo.jpg" alt="Andrea Pirlo">
+          </a>
+        </div>
+  </div>
+<!-- SFARSIT Bloc 1  ECHIPA-->
+
+<!-- Bloc 2 -->
+    <div class="block">
+
+      <div style="text-align: center;">
+        <h3 style="text-decoration: underline; color: #3A8EBA">NEWSLETTER</h3>
+      </div>
+
+      <div>
+        <p>A newsletter is a printed report containing news (information)
+          of the activities of a business or an organization</p>
+      </div>
+
+<div>
+<form style="width: 100%;">
+  <input type="email" name="emailaddress" value="E-mail">
+</form>
 </div>
 
-<div class="center" style="float: right;">
-  <h3 style="text-decoration: underline; color: #3A8EBA">NEWSLETTER</h3>
+<div>
+  <form style="width: 100%;">
+    <input type="checkbox" name="acord conditii" style="float:left;">
+    <p style="font-size: 11px;">
+      Sunt de acord cu termenii si conditiile serviciilor.
+    </p>
+  </form>
 </div>
 
-<div class="center" style="float: right;">
-  <h3 style="text-decoration: underline; color: #3A8EBA">CONTACT</h3>
+<div>
+  <form style="width: 100%;">
+    <input type="submit" name="submit" value="Inscrie-te">
+      </form>
 </div>
+
+    </div>
+<!-- SFARSIT Bloc 2  NEWSLETTER -->
+
+<!--Bloc 3 CONTACT -->
+        <div class="block">
+          <div style="text-align: center;">
+          <h3 style="text-decoration: underline; color: #3A8EBA">CONTACT</h3>
+        </div>
+
+        <div style="padding-bottom: 10px;">
+<img style="width: 50px; height: 60px; float: left; margin-left: 1px;"
+  src="imagini/telefon.png">
+ <pre style="padding-left: 55px;">
+Fix      0332 232 659
+Orange   0746 987 654
+Cosmote  0563 531 744
+</pre>
+        </div>
+
+<hr width="80%"/>
+
+        <div style="padding-bottom: 10px;">
+        <img style="width: 50px; height: 60px; float: left;"
+            src="imagini/pin harta.png">
+        <pre style="padding-left: 55px;">
+Bulevardul Basarabia
+nr. 37-39
+București 077085
+        </pre>
+        </div>
+
+      </div>
+<!-- SFARSIT Bloc 3 CONTACT -->
+
+            <div class="block">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11395.837731897587!2d26.135010123252883!3d44.4339943546062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f932b120b96b%3A0x53a7021f11d624a4!2zQXJlbmEgTmHIm2lvbmFsxIM!5e0!3m2!1sro!2sro!4v1553020047588"
+              frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+            </div>
+
+  </div>
+<!-- SFARSIT PARTE DE JOS -->
+
+<p style="color: whitesmoke; text-align: center;">
+  Copyright 2012-2016 Medy Sportline. Toate drepturile rezervate</p>
 
   </body>
 </html>
